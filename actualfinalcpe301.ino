@@ -159,6 +159,7 @@ void disabledState(){
   }
   if (systemEnabled) {
     currentState = IDLE;
+    previousState = DISABLED;
   }
 }
 
