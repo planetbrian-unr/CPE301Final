@@ -175,7 +175,7 @@ void idledState(float temperature, float humidity, int waterLevel){
   lcd.setCursor(0, 1);
   lcd.print("Humidity: ");
   lcd.print(humidity);
-  if(currentState == IDLE && (previousState == DISABLED || previousState == RUNNING)){
+  if((currentState == IDLE && previousState == DISABLED) || (currentState == IDLE && previousState == RUNNING)){
     DateTime now = rtc.now();
     int year = now.year();
     int month = now.month();
