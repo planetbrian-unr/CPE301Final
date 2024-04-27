@@ -467,5 +467,5 @@ void displayTime(){
 
   U0putchar('\n');
   time_now = millis();
-  while(millis() < time_now + 1000); // delay(500);
+  while(millis() < time_now + 500); // delay(500);
 }
